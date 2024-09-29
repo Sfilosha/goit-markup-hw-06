@@ -36,7 +36,7 @@
     <header class="header">
       <div class="container header">
         <nav class="nav">
-          <a class="logo" href="./index.html"
+          <a class="logo header-logo" href="./index.html"
             >Web<span class="logo dark">Studio</span></a
           >
           <ul class="nav-list">
@@ -51,6 +51,11 @@
             </li>
           </ul>
         </nav>
+        <button class="mob-menu-btn" type="button">
+          <svg class="mob-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="address">
           <ul class="address-list">
             <li class="address-list-item">
@@ -150,6 +155,10 @@
               <img
                 class="team-image"
                 src="./images/team/img-01.jpg"
+                srcset="
+                  ./images/team/img-01.jpg    1x,
+                  ./images/team/img-01@2x.jpg 2x
+                "
                 alt="Mark portrait"
                 width="264"
                 height="260"
@@ -193,6 +202,10 @@
               <img
                 class="team-image"
                 src="./images/team/img-02.jpg"
+                srcset="
+                  ./images/team/img-02.jpg    1x,
+                  ./images/team/img-02@2x.jpg 2x
+                "
                 alt="Tom portrait"
                 width="264"
                 height="260"
@@ -236,6 +249,10 @@
               <img
                 class="team-image"
                 src="./images/team/img-03.jpg"
+                srcset="
+                  ./images/team/img-03.jpg    1x,
+                  ./images/team/img-03@2x.jpg 2x
+                "
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -279,6 +296,10 @@
               <img
                 class="team-image"
                 src="./images/team/img-04.jpg"
+                srcset="
+                  ./images/team/img-04.jpg    1x,
+                  ./images/team/img-04@2x.jpg 2x
+                "
                 alt="Daniel portrait"
                 width="264"
                 height="260"
@@ -334,6 +355,10 @@
                 <img
                   class="portfolio-image"
                   src="./images/portfolio/img-01.jpg"
+                  srcset="
+                    ./images/portfolio/img-01.jpg    1x,
+                    ./images/portfolio/img-01@2x.jpg 2x
+                  "
                   alt="application mockups"
                   width="360"
                   height="300"
@@ -354,6 +379,10 @@
                 <img
                   class="portfolio-image"
                   src="./images/portfolio/img-02.jpg"
+                  srcset="
+                    ./images/portfolio/img-02.jpg    1x,
+                    ./images/portfolio/img-02@2x.jpg 2x
+                  "
                   alt="person paying with a phone"
                   width="360"
                   height="300"
@@ -374,6 +403,10 @@
                 <img
                   class="portfolio-image"
                   src="./images/portfolio/img-03.jpg"
+                  srcset="
+                    ./images/portfolio/img-03.jpg    1x,
+                    ./images/portfolio/img-03@2x.jpg 2x
+                  "
                   alt="web and mobile webside mockup"
                   width="360"
                   height="300"
@@ -394,6 +427,10 @@
                 <img
                   class="portfolio-image"
                   src="./images/portfolio/img-04.jpg"
+                  srcset="
+                    ./images/portfolio/img-04.jpg    1x,
+                    ./images/portfolio/img-04@2x.jpg 2x
+                  "
                   alt="taxi driver using mobile application"
                   width="360"
                   height="300"
@@ -414,6 +451,10 @@
                 <img
                   class="portfolio-image"
                   src="./images/portfolio/img-05.jpg"
+                  srcset="
+                    ./images/portfolio/img-05.jpg    1x,
+                    ./images/portfolio/img-05@2x.jpg 2x
+                  "
                   alt="few purple illustrations with a night sky"
                   width="360"
                   height="300"
@@ -434,6 +475,10 @@
                 <img
                   class="portfolio-image"
                   src="./images/portfolio/img-06.jpg"
+                  srcset="
+                    ./images/portfolio/img-06.jpg    1x,
+                    ./images/portfolio/img-06@2x.jpg 2x
+                  "
                   alt="pretty girl watching an online course on the go"
                   width="360"
                   height="300"
@@ -531,7 +576,7 @@
     </footer>
 
     <!-- #region Modal -->
-    <div class="modal-backdrop is-open">
+    <div class="modal-backdrop is-open1">
       <div class="modal">
         <button class="close-button" type="button">
           <svg class="close-icon" width="8" height="8">
@@ -615,13 +660,15 @@
                   <use href="./images/icons.svg#icon-checkmark"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the &nbsp;<a
-                class="text-link"
-                href="#"
-                target="_blank"
-                rel="nooperner norefferer"
-                >Privacy Policy</a
-              >
+              <span class="agreement-text">
+                I accept the terms and conditions of the&nbsp;<a
+                  class="text-link"
+                  href="#"
+                  target="_blank"
+                  rel="nooperner norefferer"
+                  >Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
 
@@ -630,5 +677,57 @@
       </div>
     </div>
     <!-- #endregion Modal-->
+    <!-- #region Mobile Menu  -->
+    <div class="mob-menu is-open1">
+      <button class="close-button">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mob-menu-nav">
+        <li><a class="mob-menu-link active-link" href="#">Studio</a></li>
+        <li><a class="mob-menu-link" href="#">Portfolio</a></li>
+        <li><a class="mob-menu-link" href="#">Contacts</a></li>
+      </ul>
+      <ul class="mob-menu-address">
+        <li>
+          <a class="mob-menu-address-link active-link" href=""
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li><a class="mob-menu-address-link" href="">info@devstudio.com</a></li>
+      </ul>
+      <ul class="socials">
+        <li class="socials-list-item">
+          <a class="social-icons" href="https://instagram.com">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-list-item">
+          <a class="social-icons" href="https://x.com">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-list-item">
+          <a class="social-icons" href="https://facebook.com">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-list-item">
+          <a class="social-icons" href="https://linkedin.com">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- #endregion Mobile Menu -->
   </body>
 </html>
